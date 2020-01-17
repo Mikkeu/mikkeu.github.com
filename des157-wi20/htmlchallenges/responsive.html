@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+:)
+    </title>
+</head>
+<body>
+    <header>
+        <h1>HTML and CSS Refresher Challenges</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">
+                    HTML Basics
+                </a>
+            </li>
+            <li>
+                <a href="cssbasics.html">
+                    CSS Basics
+                </a>
+            </li>
+            <li>
+                <a href="layout.html">
+                    Page Layout
+                </a>
+            </li>
+            <li>
+                <a href="responsive.html">
+                    Responsive Design
+                </a>
+            </li>
+            
+        </ul>
+
+    </nav>
+
+    <main>
+        <article>
+            <h2>
+                About Media Queries
+            </h2>
+            <p>
+               Media queries are used in html to have certain CSS only work if certain conditions are true. It is very speciifc.  It is useful for changing a page's layout if the page changes sizes like it is being used for different monitors. so if the monitor is less than a certain amount of pixels, it will change so all the information can be displayed well. Min width is if the screen is a certain number or more then it is true. Max width is if the screen is a certain number but smaller then it is true.
+               When using media queries, it is standard to design mobile first. This is because it will load faster for smaller devices than if we worked in reverse, because there is less for the mobile device to load and change.
+
+            </p>    
+        </article>
+        <article>
+            <h2>
+                Relative Units
+            </h2>
+            <p>
+                A relative unit is a sizing option that gets it's size from a relative length of something else. For example, em is a font relative sizing. So if the font size changes so will the sizing of the elements using this sizing method. 
+                This is good to use for screens that change size and for the fonts that change size with it. If you don't do this the spacing will change disproportionally with the rest of the elements on the page. 
+                Percentage is a bit different. If one element that is not contained in another is set to 90% width then it is 90% of how much the user can see. If there is an element inside that element that is set to 90% width as well then it is 90% of the element is it in not of the space  of the viewport.
+            </p>
+        </article>
+        <article >
+            <h2>
+                Meta Viewport Tag
+            </h2>
+            <p >
+                The viewport is the part of the browser we can see. The meta viewport was added to control the viewport's size and scale. This is useful if the monitor is too small and the webpage does not fit it.
+                When I checked my webpages after taking off the meta viewport tag, I noticed it was a lot slower when adjusting for changing the window browser size. With the meta tag it was much smoother and easier to use if the page kept changing.
+            </p>
+        </article>
+    </main>
+    <footer>
+        <p>
+            Page by Mikaela
+        </p>
+
+        <p>HTML checked by
+        </p>
+        <p>
+            <a href="http://validator.w3.org/check?uri=referer">Valid HTML</a>
+        </p>
+    </footer>
+</body>
+</html>

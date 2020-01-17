@@ -1,0 +1,100 @@
+@media only screen and (min-width: 600px) { 
+main { display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+article {
+    width: 30%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li{
+    flex: 1;
+    border-right: solid;
+    border-width: 2px;
+    border-color: #EFEEED;
+}
+
+nav ul li:last-of-type {
+    border-right: none;
+}
+
+}
+header{
+    text-align: center;
+}
+header, footer{
+    background: rgb(228,87,46);
+    background: radial-gradient(circle, rgba(228,87,46,1) 0%, rgba(239,238,237,1) 100%);
+    padding: 1em;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+nav ul li a {
+    font-family: 'Abel', sans-serif;
+   display: block;
+    color: #E4572E;
+    background-color:#FFBF00;
+    line-height: 3;
+    font: 100;
+    font-weight: bold;
+    text-decoration: none; 
+    text-align: center;
+    height: auto;
+    
+}
+nav ul li a:link{
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #FFBF00;
+    background-color:#E4572E;
+}
+
+h1{
+    font-family: 'Alata', sans-serif;
+    color: #266DD3;
+    font-weight: bold;
+    font-size: 4em;
+}
+body{
+    
+    font-family: 'Abel', sans-serif;
+    color: #344055;
+    font-size: 1em;
+}
+main{
+    background-color: #EFEEED;
+    padding: 1em;
+    
+}
+.bg{
+    background-image: url("images/bobo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #EFEEED;
+    padding: 1em;
+   
+}
+.bg p, .bg h2{
+    background-color: rgba(1, 1, 1, 0.3);
+}
+p{
+    padding-left: 50px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
+footer{
+    text-align: center;
+}
