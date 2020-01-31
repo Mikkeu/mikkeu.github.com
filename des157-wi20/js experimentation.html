@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Experiment</title>
+</head>
+<body>
+    <script>
+      function everyOther(string) {
+  var newString = "";
+
+  for (var i = 0; i < string.length; i++) {
+    if (i % 2 === 0) {
+      newString += string.charAt(i).toUpperCase();
+      console.log(newString);
+    }else {
+      newString += string.charAt(i);
+      console.log(newString);
+    }
+  }
+  return newString 
+}
+
+everyOther("hi hi hi hi hiiiiiiiiii");
+      
+        function upperMessage( message ) {
+    var upper = message.toUpperCase();
+    console.log(upper);
+  }
+  upperMessage( "an important messsage!");
+
+  var cheese =[ "goda", "feta", "cream cheese", "brie", "mozzerella"];
+        
+       var sentence = prompt("Pick a number", "");
+       var result = "okay, Here is some";
+       var i=0;
+       var greeting = prompt("What is your name?", "");
+    
+    if (greeting != null) {
+        alert("Hi "+ greeting +"!");
+      
+    }
+    
+        if (sentence[i] %2 === 0){
+            console.log(`${result} ${cheese[i].toUpperCase()} \n`);
+            }
+            else {
+                console.log(`${result} ${cheese[i]} \n`);
+            };
+
+            
+
+  function randomInt( min,max){
+      return Math.floor( (max - min + 1) * Math.random() ) + min ;
+  }
+console.log( cheese[randomInt(0,cheese.length-1) ] );
+
+
+    var myInteger = prompt("please enter a number between 1 and 10", "");
+
+if( parseInt(myInteger) ){
+     console.log(`you get ${cheese[i]}`);
+}
+else{ console.log("you don't have an number"); }
+     
+
+
+    </script>
+</body>
+</html>
