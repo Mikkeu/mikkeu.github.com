@@ -1,7 +1,7 @@
 @media only screen and (min-width: 600px) { 
     main { display: flex;
         justify-content: space-between;
-        max-width: 1200px;
+        max-width: 1500px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -65,8 +65,13 @@ row{
     width: 50em;
 }
 main{
-    width: 50em;
+    width: 1000px;
     background-color: #EDF2E1;
+    margin-right: 10px;
+}
+
+article{
+    padding-right: 10px;
 }
 h1{
     font-family: 'Pacifico', cursive;
