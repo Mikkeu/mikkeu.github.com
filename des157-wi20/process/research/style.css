@@ -75,7 +75,7 @@ main{
 }
 
 
-h1{
+a{
     font-family: 'Pacifico', cursive;
     color: #604D53;
     padding-right: 2em; 
@@ -108,8 +108,9 @@ display: flex;
 
 article{
  display: block;
- padding-left: 1em;
+ /* padding-left: 1em; */
  padding-right: 1em;
+ padding-top: 2em;
 
 }
 
