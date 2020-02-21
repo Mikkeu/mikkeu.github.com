@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime|Gayathri|Pacifico&display=swap');
+
 @media only screen and (min-width: 600px) { 
     main { display: flex;
         justify-content: space-between;
