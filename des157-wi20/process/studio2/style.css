@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+body{
+   background-color: #EFFCFF;
+   font-family: 'Odibee Sans', cursive; 
+}
+
+.container{
+	display: block;
+	position: relative;
+    
+}
+#links {
+	width: 420px;
+	display: flex;
+}
+
+#links a {
+	display: block;
+	flex: 1;
+	background:#DFF3E3;
+	height: auto;
+	width: auto;
+	line-height: 50px;
+	color: #E15A97;
+	transition: 0.8s;
+	text-decoration: none;
+	font-family: Arial;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 25px;
+	margin-right: 30px;
+	margin-left: 150px;
+	margin-top: 600px;
+	padding:20px;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+	transition:         transform .8s ease-in-out;
+	box-shadow: 2px 2px 4px 4px #A582BF;
+}
+
+#links a:hover {
+	background: #BEE5BF;
+	color: #472F59;
+	transition: 0.8s;
+	-webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+#intro{
+	position: absolute;
+	border-radius: 25px;
+	top:150px;
+	right:200px;
+	display: block;
+	width: 300px;
+	height: 150px;
+	background-color: #DFF3E3 ;
+	padding: 30px;
+	font-size: 1.5em;
+	box-shadow: 2px 2px 4px 4px #A582BF;
+	color: #350759;
+
+}
+
+#myself{
+position: absolute;
+top:50px;
+left:400px;
+background-color: #E15A97;
+box-shadow: 2px 2px 4px 4px #A582BF;
+border-radius: 25px;
+
+
+}
