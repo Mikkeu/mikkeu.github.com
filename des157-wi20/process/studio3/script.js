@@ -67,6 +67,13 @@ function throwDice(){
 		setTimeout(setUpTurn, 2000);
 	}
 
+	else if(gameData.roll1 === 4 || gameData.roll2 === 4){
+		game.innerHTML += `<p>OMG a 4!!  That's worth double points!</p>`;
+		gameData.score[gameData.index] += 8;
+		setTimeout(setUpTurn, 2000);
+	}
+
+
 	// if neither die is a 1...
 	else {
 		gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
