@@ -22,7 +22,7 @@ startGame.addEventListener("click", function(){
 	//console.log(gameData.index);
 
 	gameControl.innerHTML = '<h2>The Game Has Started</h2>';
-	gameControl.innerHTML += '<button id="quit">Wanna Quit?</button>';
+	gameControl.innerHTML += '<button id="quit">Quit?</button>';
 
 	document.getElementById('quit').addEventListener("click", function(){
 		location.reload();
@@ -53,7 +53,7 @@ function throwDice(){
 
 	// if two 1's are rolled...
 	if( gameData.rollSum === 2 ){
-		game.innerHTML += "<p>Oh snap! Snake eyes!</p>";
+		game.innerHTML += "<p>Uh Oh! Snake eyes!</p>";
 		gameData.score[gameData.index] = 0;
 		gameData.index ? gameData.index = 0 : gameData.index = 1;
 		showCurrentScore();
@@ -63,7 +63,7 @@ function throwDice(){
 	// if either die is a 1...
 	else if(gameData.roll1 === 1 || gameData.roll2 === 1){
 		gameData.index ? gameData.index = 0 : gameData.index = 1;
-		game.innerHTML += `<p>Sorry, one of your rolls was a one, switching to  ${gameData.players[gameData.index]}</p>`;
+		game.innerHTML += `<p>Oh No! You rolled a one!! Skipping your turn, switching to  ${gameData.players[gameData.index]}</p>`;
 		setTimeout(setUpTurn, 2000);
 	}
 
@@ -99,7 +99,7 @@ function checkWinningCondition(){
 }
 
 function showCurrentScore(){
-	score.innerHTML = `<p>The score is currently <strong>${gameData.players[0]}
-	${gameData.score[0]}</strong> and <strong>${gameData.players[1]} 
+	score.innerHTML = `<p>The score is currently <strong>${gameData.players[0]} :
+	${gameData.score[0]}</strong> and <strong>${gameData.players[1]} :
 	${gameData.score[1]}</p>`;
 }
