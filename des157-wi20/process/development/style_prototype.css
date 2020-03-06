@@ -2,7 +2,7 @@ body{
     background-color: #5F5854;
     background-image: url(images/map.png) ; 
     background-position: center center;
-    max-width: 700px;
+    max-width: 700pxgit;
   
   /* Background image doesn't tile */
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@ h1{
 nav ul li{
     text-decoration: none;
 }
-#hidden { display: none;}
+.hidden { display: none;}
 
 #map {
      position: absolute; 
@@ -45,3 +45,41 @@ nav ul li{
      left: 30%; 
      width: 100%; 
 }
+#tabs {
+	width: 400px;
+	margin: auto;
+}
+
+#tabs > ul {
+	list-style-type: none;
+	display: flex;
+}
+
+#tabs > ul > li > a {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 2px;
+	background: #a2a2a2;
+	color: #cecece;
+	text-decoration: none;
+	padding: 0 15px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+#tabs > div {
+	padding: 15px;
+	background: #eaeaea;
+	transition: opacity 200ms linear;
+}
+
+#tabs .active{
+	background: #eaeaea;
+	color: #333;
+
+}
+
+#tabs .hidden { display: none; }
+#tabs .visible { display: block; }
+#tabs .visuallyhidden { opacity: 0;}
