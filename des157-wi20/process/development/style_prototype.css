@@ -1,0 +1,47 @@
+body{
+    background-color: #5F5854;
+    background-image: url(images/map.png) ; 
+    background-position: center center;
+    max-width: 700px;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+ 
+}
+h1{
+    text-align: center;
+}
+.header{
+    position: absolute; 
+    width: 100%; 
+    height: 100px;
+    top: 0%; 
+
+    background-color: #FFB6B6;
+    transition: width 2s, height 2s, transform 2s;}
+
+.header:hover{
+    height:15%;
+    transition-timing-function: ease;
+	
+}
+nav ul li{
+    text-decoration: none;
+}
+#hidden { display: none;}
+
+#map {
+     position: absolute; 
+     top: 20%; 
+     bottom: 0; 
+     left: 30%; 
+     width: 100%; 
+}

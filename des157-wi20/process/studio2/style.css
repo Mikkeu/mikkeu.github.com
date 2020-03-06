@@ -32,8 +32,8 @@ body{
 	margin-left: 150px;
 	margin-top: 600px;
 	padding:20px;
-	-webkit-transition: -webkit-transform .8s ease-in-out;
-	transition:         transform .8s ease-in-out;
+	-webkit-transition:  .8s ease-in-out;
+	transition:         height .8s ease-in-out;
 	box-shadow: 2px 2px 4px 4px #A582BF;
 }
 
