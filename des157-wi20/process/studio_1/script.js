@@ -19,7 +19,6 @@
             //run a function to put the words into the madlib... Function below...
             //Pass the array of words the user typed into the function
             makeMadLib(words);
-
         });
 
         //This function takes an array input, then constructs the madlib, peppering
@@ -35,4 +34,26 @@
 
             //change the class on the madlib container so you can see it.
             mlContainer.setAttribute("class", "visible");
+            document.getElementById("myform").setAttribute("class", "invisible");
+            document.getElementById("caake").setAttribute("class", "cake");
+
+        }
+
+        let image = new Image();
+        image.src = "images/chefs.png";
+        let counter = 0,
+          frame_width = 370,
+          frame_height = 500;
+        image.onload = function() {
+          let canvas = document.getElementById("myCanvas");
+          let context = canvas.getContext("2d");
+          window.requestAnimationFrame(animate);
+         
+          function animate() {
+            let frame = Math.floor(counter % 8);
+            context.drawImage(image, frame * frame_width, 0, frame_width, frame_height, 0, 0, frame_width, frame_height);
+            counter = counter + .05;
+            
+            window.requestAnimationFrame(animate);
+          }
         }
