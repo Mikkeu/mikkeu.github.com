@@ -1,6 +1,37 @@
 (function(){
   "use strict";
 
+  window.onload=function(){
+    var social = document.getElementById('social');
+    var health = document.getElementById('health');
+    var job = document.getElementById('job');
+    health.addEventListener("click", healthfun );
+    job.addEventListener("click",jobfun);
+    social.addEventListener("click",socialfun);
+
+
+      event.preventDefault;
+
+      function socialfun() {
+      document.getElementById("helper").innerHTML = "Volunteering helps make a difference in your community! The social benefits are...";
+
+    }
+    
+    
+
+    function healthfun() {
+      document.getElementById("helper").innerHTML = "Volunteering is not only good for others, it's also good for your own health! The health benefits are...";
+
+        }
+        function jobfun() {      
+      document.getElementById("helper").innerHTML = "Volunteering can offer many skills..";
+
+    }
+
+    };
+
+
+
 //same as forEach }
 
 const tabs = document.querySelectorAll(`#tabs > ul > li > a`);
@@ -62,42 +93,6 @@ let image = new Image();
           }
         };
 
-        window.onload=function(){
-          var social = document.getElementById('social');
-          var health = document.getElementById('health');
-          var job = document.getElementById('job');
-          health.addEventListener('click', healthfun )
-          job.addEventListener('click',jobfun);
-
-
-      
-          social.addEventListener('click',socialfun);
-            event.preventDefault;
-      
-            function socialfun() {
-            document.getElementById("helper").innerHTML = "Volunteering helps make a difference in your community! The social benefits are...";
-      
-          }
-          
-          
-      
-          function healthfun() {
-            event.preventDefault;
-            
-            
-            document.getElementById("helper").innerHTML = "Volunteering is not only good for others, it's also good for your own health! The health benefits are...";
-      
-              }
-              function jobfun() {
-          
-            event.preventDefault;
-      
-      
-            document.getElementById("helper").innerHTML = "Volunteering can offer many skills..";
-      
-          }
-      
-          };
           
           
       
