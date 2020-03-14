@@ -462,14 +462,15 @@ canvas {position: fixed;
   }
 
   .bubble{
-    top: 200px;
-    left: 866px;
+    top: 340px;
+    left: -3%;
     font-size: 1.5em;
   }
   .options{
-    top: 0;
+    top: -94px;
     left: 300px;
     right: 0;
+    bottom:0;
   }
 
  
