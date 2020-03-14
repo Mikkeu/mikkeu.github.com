@@ -5,97 +5,110 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_prototype.css">
+    <link rel="stylesheet" href="style.css">
     
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet' />
 
 
-    <title>Digital Prototype V1</title>
+    <title>Final</title>
 </head>
 <body>
+
+<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<nav role="navigation">
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
+      
+      <!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#tabs-1">About 
+                <div id="tabs-1" class="hidden">
+                    <p>
+                        Croissant cotton candy lollipop tart lollipop donut. Applicake halvah bear claw
+                        dessert sweet roll caramels halvah toffee fruitcake. Macaroon cupcake dessert
+                        wafer tiramisu gummies pie pudding. Cotton candy jujubes applicake brownie sweet
+                        roll. Icing gingerbread tiramisu sweet roll candy. Fruitcake gummi bears jelly
+                        beans.
+                    </p>
+        
+                    <p>
+                        Sesame snaps dragée fruitcake oat cake soufflé. Macaroon jelly beans cotton
+                        candy. Pudding gingerbread chupa chups croissant brownie chocolate bar gummi
+                        bears bear claw sweet.
+                    </p>
+                </div>
     
-    <div class="header">
-        <h1>TITLE</h1>
-
-</div>
-<button class="menu">
-    <svg viewBox="0 0 64 48">
-        <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
-        <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
-        <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
-    </svg>
-</button>
-
-
-<div class="hidden" id="box">
-
-    <div id="tabs">
-
-        <ul>
-            <li><a href="#tabs-1" class="active">About</a></li>
-            <li><a href="#tabs-2">Contact</a></li>
-            <li><a href="#tabs-3">Resources</a></li>
-            <li><a href="#tabs-4" id="tabBtn">X</a></li>
-
-        </ul>
-
-        <div id="tabs-1" class="visible">
-            <p>
-                Croissant cotton candy lollipop tart lollipop donut. Applicake halvah bear claw
-                dessert sweet roll caramels halvah toffee fruitcake. Macaroon cupcake dessert
-                wafer tiramisu gummies pie pudding. Cotton candy jujubes applicake brownie sweet
-                roll. Icing gingerbread tiramisu sweet roll candy. Fruitcake gummi bears jelly
-                beans.
-            </p>
-
-            <p>
-                Sesame snaps dragée fruitcake oat cake soufflé. Macaroon jelly beans cotton
-                candy. Pudding gingerbread chupa chups croissant brownie chocolate bar gummi
-                bears bear claw sweet.
-            </p>
-        </div>
-
-        <div id="tabs-2" class="hidden">
-            <p>
-                Tiramisu jujubes bear claw jelly-o brownie lemon drops brownie sesame snaps.
-                Jelly-o cupcake sesame snaps muffin sesame snaps. Cookie croissant topping
-                carrot cake candy canes gingerbread soufflé sweet roll pie. Tootsie roll
-                chocolate tootsie roll lollipop. Lemon drops liquorice cotton candy gummies cake
-                ice cream cheesecake cupcake muffin.
-            </p>
-
-            <p>
-                Tart bear claw biscuit bonbon topping wafer dessert sesame snaps ice cream.
-                Chupa chups biscuit donut icing gummies unerdwear.com danish carrot cake cookie.
-                Toffee soufflé gummi bears marzipan cupcake. Brownie chocolate jujubes sweet
-                roll oat cake candy canes.
-            </p>
-        </div>
-        <div id="tabs-3" class="hidden">
-            <p>
-                Cupcake chocolate cake gummies. Brownie marzipan sesame snaps. Unerdwear.com
-                cupcake cotton candy chocolate bar pudding. Dragée caramels tart bonbon
-                fruitcake chocolate bar. Tart candy fruitcake dragée gummi bears topping.
-                Unerdwear.com dragée dragée pie. Liquorice applicake marshmallow donut soufflé
-                cookie carrot cake. Icing wafer powder sweet biscuit bear claw. Halvah jujubes
-                dessert. Chupa chups chocolate cake biscuit fruitcake gingerbread.
-            </p>
-
-            <p>
-                Caramels toffee marzipan muffin. Cotton candy tootsie roll gummi bears fruitcake
-                sesame snaps applicake unerdwear.com. Caramels soufflé sweet powder caramels
-                gummi bears chocolate cake. Caramels tootsie roll bear claw topping jelly-o.
-                Tart danish jelly bonbon. Toffee fruitcake carrot cake bear claw. Jujubes sugar
-                plum jujubes caramels cake. Lollipop sweet danish icing donut sweet pie dessert
-                sesame snaps.
-            </p>
-        </div>
-    </div>
-</div>
-</div>
-<script src="script.js" ></script>
-
+            </a></li>
+           
+            <li><a href="#tabs-2" >Contact
+                <div id="tabs-2" class="hidden">
+                    <p>
+                        Tiramisu jujubes bear claw jelly-o brownie lemon drops brownie sesame snaps.
+                        Jelly-o cupcake sesame snaps muffin sesame snaps. Cookie croissant topping
+                        carrot cake candy canes gingerbread soufflé sweet roll pie. Tootsie roll
+                        chocolate tootsie roll lollipop. Lemon drops liquorice cotton candy gummies cake
+                        ice cream cheesecake cupcake muffin.
+                    </p>
+        
+                    <p>
+                        Tart bear claw biscuit bonbon topping wafer dessert sesame snaps ice cream.
+                        Chupa chups biscuit donut icing gummies unerdwear.com danish carrot cake cookie.
+                        Toffee soufflé gummi bears marzipan cupcake. Brownie chocolate jujubes sweet
+                        roll oat cake candy canes.
+                    </p>
+                </div>
+        
+            </a></li>
+          
+            <li><a href="#tabs-3" >Resources
+                <div id="tabs-3" class="hidden">
+                    <p>
+                        Cupcake chocolate cake gummies. Brownie marzipan sesame snaps. Unerdwear.com
+                        cupcake cotton candy chocolate bar pudding. Dragée caramels tart bonbon
+                        fruitcake chocolate bar. Tart candy fruitcake dragée gummi bears topping.
+                        Unerdwear.com dragée dragée pie. Liquorice applicake marshmallow donut soufflé
+                        cookie carrot cake. Icing wafer powder sweet biscuit bear claw. Halvah jujubes
+                        dessert. Chupa chups chocolate cake biscuit fruitcake gingerbread.
+                    </p>
+        
+                    <p>
+                        Caramels toffee marzipan muffin. Cotton candy tootsie roll gummi bears fruitcake
+                        sesame snaps applicake unerdwear.com. Caramels soufflé sweet powder caramels
+                        gummi bears chocolate cake. Caramels tootsie roll bear claw topping jelly-o.
+                        Tart danish jelly bonbon. Toffee fruitcake carrot cake bear claw. Jujubes sugar
+                        plum jujubes caramels cake. Lollipop sweet danish icing donut sweet pie dessert
+                        sesame snaps.
+                    </p>
+                </div>
+    
+            </a></li>
+           </ul></div> </nav>
+    <header>
+        <h1>Inspire Volunteering</h1>
+    </header>
+    <script src="script.js" ></script>
 </body>
+
 </html>
